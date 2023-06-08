@@ -1,0 +1,342 @@
+.spann {
+  float: right;
+  margin-right: 10px;
+}
+
+.img_100 {
+  width: 100%;
+}
+.header {
+}
+/* Header 1 */
+.header__first {
+  height: 36px;
+  background-color: #f5f5f5;
+  /* position: fixed;
+      z-index: 100;
+      right: 0;
+      left: 0; */
+}
+.header__navbar1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__navbar-item-link-text1 {
+  margin: 0 10px;
+  /* can chu o giua */
+  line-height: 35px;
+}
+.header__navbar-item {
+  position: relative;
+}
+.header__navbar-item,
+.header__navbar-item-link-text1 {
+  /* the li len cung 1 hang */
+  display: inline-block;
+  font-size: 1.3rem;
+  /* bo gach chan the a */
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+}
+
+/* .header__navbar-item:hover, */
+.header__navbar-item-link-text1:hover {
+  color: #858484;
+}
+.header__navbar-item-link-text1-gachngang::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-left: 1px solid #171717;
+  height: 15px;
+  right: -9px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* End Header 1 */
+
+/* Header 2 */
+.header__navbar {
+  /* 3 the ul len cung 1 hang */
+  display: flex;
+  justify-content: space-between;
+}
+.header__navbar-list {
+  margin: 0;
+  /* bo dau cham o the ul li */
+  list-style: none;
+  padding-left: 0;
+  z-index: 100;
+}
+
+.header__navbar-item-link-text {
+  margin: 0 10px;
+  /* can chu o giua */
+  line-height: 70px;
+}
+.header__navbar-item-linkimg {
+  margin-top: 10px;
+}
+
+.header__navbar-item-link-text {
+  /* the li len cung 1 hang */
+  display: inline-block;
+  font-size: 1.6rem;
+  /* bo gach chan the a */
+  text-decoration: none;
+  color: black;
+  height: 100px;
+}
+.header__navbar-item {
+  display: inline-block;
+  font-size: 1.6rem;
+  /* bo gach chan the a */
+  text-decoration: none;
+  color: black;
+}
+/* End Header 2 */
+/* .header__navbar-item-linkimg:hover,
+    .header__navbar-item:hover,
+    */
+.header__navbar-item-link-text:hover {
+  text-decoration: underline;
+}
+
+/* form thong bao */
+.header__thongbao {
+  position: fixed;
+  top: 96px;
+  right: 0;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 99;
+  text-align: center;
+
+  /* height: 50vh; */
+  /* khi di chuot vao hien len thong bao */
+  animation: headerthongbaohien step-end 0.3s;
+  /* an di */
+  display: none;
+}
+@keyframes headerthongbaohien {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.header__thongbao::before {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  content: "";
+  top: -19px;
+  display: block;
+}
+.header__navbar-item--hienlen:hover .header__thongbao {
+  display: flex;
+  justify-content: space-evenly;
+}
+/* .header__thongbao-header {
+      height: 40px;
+    } */
+
+.header__thongbao-list {
+  padding: 0 10px;
+  display: inline-block;
+}
+.header__thongbao_item {
+  list-style: none;
+  margin: 20px 0;
+}
+.header__thongbao-au {
+  text-decoration: none;
+  color: #171717;
+}
+.header__thongbao-text {
+  text-decoration: none;
+  color: #757575;
+}
+.header__thongbao-text:hover {
+  color: #171717;
+}
+
+/* End Thong bao */
+
+.header__navbar-item-input {
+  border: transparent;
+  background-color: transparent;
+  outline: none;
+}
+.header__navbar-item-search {
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.header__navbar-item-search:hover {
+  background-color: #e5e5e5;
+}
+
+/* Men's */
+
+.container__men {
+  position: sticky;
+  /* top: var(--header-fisrt); */
+  height: 96px;
+  background-color: #ffffff;
+  z-index: 99;
+  top: 0;
+}
+.header__navbar-men {
+  /* 3 the ul len cung 1 hang */
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+.header__navbar-list-men {
+  margin: 0;
+  /* bo dau cham o the ul li */
+  list-style: none;
+  padding-left: 0;
+}
+
+.header__navbar-item-link-text-men {
+  /* the li len cung 1 hang */
+  display: inline-block;
+  font-size: 1.6rem;
+  /* bo gach chan the a */
+  text-decoration: none;
+  color: black;
+  height: 100px;
+  margin: 0 10px;
+  /* can chu o giua */
+  line-height: 70px;
+}
+.header__navbar-item-men {
+  display: inline-block;
+  font-size: 1.6rem;
+  /* bo gach chan the a */
+  text-decoration: none;
+  color: black;
+}
+
+/* container */
+.container__body {
+  width: 1400px;
+  max-width: 100%;
+  padding: 0px 0 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container__body_list {
+  list-style: none;
+  padding: 0;
+}
+.container__link {
+  position: relative;
+  text-decoration: none;
+  font-size: 1.6rem;
+  display: block;
+  padding: 8px 16px;
+  transition: right linear 0.1s;
+  right: 0;
+  color: #171717;
+}
+.container__link:hover {
+  right: -4px;
+  color: #858484;
+}
+
+.container__body-img {
+  display: inline-flex;
+  position: relative;
+  gap: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  height: 300px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding: 64px 16px 25px;
+}
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+
+  /* margin-left: auto;
+      margin-right: auto;
+      max-width: 100%; */
+}
+
+.footer__list-icon {
+  font-size: 26px;
+}
+.footer__list-icon-link {
+  text-decoration: none;
+  color: #e5e5e5;
+  border-radius: 50%;
+
+  margin-left: 16px;
+}
+.footer__list-item-find-marginbtm10 {
+  margin-bottom: 16px;
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.footer__list-item-find-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__list-icon-link:hover {
+  color: rgba(255, 255, 255, 0.3);
+}
+.footer__list-item-find-link2 {
+  text-decoration: none;
+  color: #757575;
+  /* display: flex;
+      align-items: flex-end; */
+}
+.footer__list-item-find-link2:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+.footer__map {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: -20px;
+}
+.footer__map-vn {
+  display: flex;
+
+  align-items: center;
+}
+.footer__map-year {
+  color: #757575;
+}
+.footer__map-help-text {
+  color: #757575;
+  list-style: none;
+  display: flex;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.footer__map-help-menu {
+  display: flex;
+}
+.footer__map-help {
+  display: flex;
+  align-items: flex-end;
+}
+.footer__map-help-text:hover {
+  color: rgba(255, 255, 255, 0.9);
+}

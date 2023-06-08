@@ -1,0 +1,45 @@
+:root {
+  --white--color: #fff;
+  --black--color: #000;
+  --text--color: #333;
+  --header-fisrt: 30px;
+}
+* {
+  /* kế thừa giá trị , giúp đơn giản hóa quá trình thiết kế và bảo trì các phần tử trang web */
+  box-sizing: inherit;
+}
+html {
+  /* tương ứng = 10px */
+  font-size: 62.5%;
+  /* độ cao chữ mặc định 16px */
+  line-height: 1.6rem;
+  /* font chữ ( chủng sans-serif : chữ ko có chân) */
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+/* responsive */
+.grid {
+  width: 1300px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+/* nếu ko dùng width 1300 px thì dùng full width */
+.gird__full-width {
+  width: 100%;
+}
+/* những thẻ nằm trong class này sẽ nằm trên một hàng ngang */
+.gird__row {
+  display: flex;
+  /* tổng độ dài vượt quá cha sẽ bị nhảy xuống dòng*/
+  flex-wrap: wrap;
+}
+
+/* animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
